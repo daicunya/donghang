@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scable=no">
+  <meta name="renderer" content="webkit">
+  <link href="https://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+  <title>首页</title>
+</head>
+<body>
+  <%= require('html-loader!./layout/head.html') %>
+  <div class="container">
+    <div class="p-wrap bnr-wrap swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="details.html">
+            <img src="<%= require('../images/banner.jpg') %>" alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="details.html">
+            <img src="<%= require('../images/banner02.png') %>" alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="details.html">
+            <img src="<%= require('../images/banner.jpg') %>" alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="details.html">
+            <img src="<%= require('../images/banner02.png') %>" alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="details.html">
+            <img src="<%= require('../images/banner.jpg') %>" alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="details.html">
+            <img src="<%= require('../images/banner02.png') %>" alt="">
+          </a>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Arrows -->
+      <div class="bnr-arrow swiper-button-next"></div>
+      <div class="bnr-arrow swiper-button-prev"></div>
+    </div>
+    <div class="p-wrap hot-wrap">
+      <h2 class="p-title">热门产品</h2>
+      <ul class="row">
+        <li class="col-md-2 col-sm-4 col-xs-4">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/001.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="col-md-2 col-sm-4 col-xs-4">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/001.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="col-md-2 col-sm-4 col-xs-4">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/001.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="col-md-2 col-sm-4 col-xs-4">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/001.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="col-md-2 col-sm-4 col-xs-4">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/001.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="col-md-2 col-sm-4 col-xs-4">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/001.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="p-wrap black-wrap">
+      <h2 class="p-title">黑白印刷</h2>
+      <ul class="row">
+        <li class="col-md-6 col-sm-6 col-xs-6">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/002.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="col-md-6 col-sm-6 col-xs-6">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/002.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="col-md-4 col-sm-4 col-xs-4">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/003.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="col-md-4 col-sm-4 col-xs-4">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/003.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="col-md-4 col-sm-4 col-xs-4">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/003.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="p-wrap paper-wrap">
+      <h2 class="p-title">纸质印刷</h2>
+      <ul class="row">
+        <li class="col-md-4 col-sm-4 col-xs-4">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/003.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="col-md-4 col-sm-4 col-xs-4">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/003.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="col-md-4 col-sm-4 col-xs-4">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/003.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="col-md-4 col-sm-4 col-xs-4">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/003.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="col-md-4 col-sm-4 col-xs-4">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/003.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="col-md-4 col-sm-4 col-xs-4">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/003.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="p-wrap plastic-wrap">
+      <h2 class="p-title">塑料材质印刷</h2>
+      <ul class="row">
+        <li class="col-md-6 col-sm-6 col-xs-6">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/002.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="col-md-6 col-sm-6 col-xs-6">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/002.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="col-md-4 col-sm-4 col-xs-4">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/003.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="col-md-4 col-sm-4 col-xs-4">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/003.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="col-md-4 col-sm-4 col-xs-4">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/003.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="p-wrap offset-wrap">
+      <h2 class="p-title">胶印</h2>
+      <ul class="row">
+        <li class="col-md-4 col-sm-4 col-xs-4">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/003.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="col-md-4 col-sm-4 col-xs-4">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/003.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="col-md-4 col-sm-4 col-xs-4">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/003.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="col-md-4 col-sm-4 col-xs-4">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/003.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="col-md-4 col-sm-4 col-xs-4">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/003.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="col-md-4 col-sm-4 col-xs-4">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/003.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="p-wrap custom-wrap">
+      <h2 class="p-title">设计定制</h2>
+      <ul class="row">
+        <li class="col-md-6 col-sm-6 col-xs-6">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/002.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="col-md-6 col-sm-6 col-xs-6">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/002.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="col-md-4 col-sm-4 col-xs-4">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/003.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="col-md-4 col-sm-4 col-xs-4">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/003.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="col-md-4 col-sm-4 col-xs-4">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/003.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="p-wrap text-wrap">
+      <h2 class="p-title">图文输出</h2>
+      <ul class="row">
+        <li class="col-md-3 col-sm-3 col-xs-3">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/003.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="col-md-3 col-sm-3 col-xs-3">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/003.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="col-md-3 col-sm-3 col-xs-3">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/003.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="col-md-3 col-sm-3 col-xs-3">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/003.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="col-md-3 col-sm-3 col-xs-3">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/003.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="col-md-3 col-sm-3 col-xs-3">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/003.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="col-md-3 col-sm-3 col-xs-3">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/003.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="col-md-3 col-sm-3 col-xs-3">
+          <a href="">
+            <div>
+              <img src="<%= require('../images/003.jpg') %>" alt="">
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <%= require('html-loader!./layout/footer.html') %>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
+</body>
+
+</html>

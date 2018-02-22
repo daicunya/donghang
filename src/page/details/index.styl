@@ -1,0 +1,100 @@
+@import "../common/css/mixin.styl";
+.col-xs-12,
+.col-sm-12
+  padding: 0
+//PC端
+.detail-wrap
+  width: 100%
+  .detail-cnt
+    .detail-img
+      width: 100%
+      overflow: hidden
+      img
+        width: 100%
+  .detail-aside
+    h3
+      margin: 0
+      padding: 10px 0 10px 10px
+      font-size: 1.6rem
+      //background-color: #f5f5f5
+      color: #777
+    .aside-item
+      padding: 10px
+      border-bottom: 1px dashed #777
+      color: #777
+      background-color: #f5f5f5
+      &:last-of-type
+        border-bottom-color: transparent
+      &>div
+        width: 100%
+        overflow: hidden
+        a
+          display: block
+          width: 100%
+          img
+            width: 100%
+      &>a
+        display: block
+        margin: 5px 0
+        font-size: 1.4rem
+        color: #555
+      &>p
+        margin-bottom: 0
+        color: #999
+// 移动端相关推荐
+.recommend-pro
+  display: none
+  .custom-service
+    &>div
+      &:first-of-type
+        l-height(60px)
+        overflow: hidden
+        img
+          width: 45px
+          margin-left: 5px
+      &:nth-of-type(2)
+        h4
+          font-size: 16px
+          font-weight: normal
+        p
+          font-size: 14px
+          color: #999
+      &:last-of-type
+        padding-top: 20px
+        a
+          display: inline-block
+          padding: 0 8px
+          &:first-of-type
+            border-right: 1px solid #ccc
+        i
+          display: block
+          font-size: 30px
+          color: #e9b257
+  &>h3
+    margin-top: 0
+    padding: 10px
+    font-size: 1.6rem
+    background-color: #f5f5f5
+    color: #777
+  .swiper-slide
+    width: 100%
+    &>div
+      width: 100%
+      a
+        display: block
+        img
+          width: 100%
+    &>a
+      font-size: 1.4rem
+      color: #555
+    &>p
+      font-size: 1.2rem
+      color: #999
+@media screen and (max-width: 990px) {
+  .detail-aside {
+    display: none
+  }
+  .recommend-pro {
+    display: block
+  }
+}
