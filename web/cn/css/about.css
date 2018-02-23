@@ -1,0 +1,63 @@
+.about-tab {
+  position: fixed;
+  top: 70px;
+  left: 7%;
+}
+.about-tab li {
+  width: 200px;
+  padding: 15px 0;
+}
+.about-tab li.on {
+  background-color: #e9b257;
+}
+.about-tab li.on a {
+  color: #fff;
+}
+.about-tab li:hover {
+  background-color: #e9b257;
+}
+.about-tab li:hover a {
+  color: #fff;
+}
+.about-tab li>a {
+  display: block;
+  padding-left: 20px;
+  font-size: 20px;
+  font-weight: normal;
+  color: #777;
+}
+.about-cnt {
+  margin-left: 240px;
+}
+.about-cnt h2 {
+  font-size: 24px;
+  font-weight: normal;
+}
+.about-cnt>div {
+  padding-top: 70px;
+}
+.about-cnt>div p {
+  font-size: 14px;
+  color: #777;
+  line-height: 26px;
+}
+.about-cnt .about-us>p {
+  font-size: 14px;
+  color: #777;
+  line-height: 26px;
+}
+.about-cnt .contact-us>p {
+  font-size: 14px;
+}
+.about-cnt .contact-us>p span {
+  padding-right: 10px;
+  font-size: 16px;
+}
+.about-cnt .contact-us #allMap {
+  height: 400px;
+}
+.about-cnt .copy-right h4 {
+  margin-top: 30px;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJjc3MvYWJvdXQuY3NzIiwic291cmNlUm9vdCI6IiJ9*/
