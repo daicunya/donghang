@@ -1,9 +1,9 @@
-<?php //var_dump($_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);die;?>
+<?php session_start();?>
 <div class="navbar navbar-inverse">
     <div class="navbar-inner">
         <div class="container-fluid">
             <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-            <a href="index.php" target="_blank" class="brand"><img src="/css/coreCss/img/favicon.png">sat在线后台</a>
+            <a href="index.php" target="_blank" class="brand"><img src="/css/coreCss/img/favicon.png">donghang</a>
             <div class="nav-collapse navbar-responsive-collapse">
 
                 <ul class="nav pull-right">

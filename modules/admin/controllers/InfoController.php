@@ -23,7 +23,7 @@ class InfoController extends ApiControl
         $page = Yii::$app->request->get('p', 1);
         $offset = $pagesize * ($page - 1);
         $count = Yii::$app->db->createCommand("select count(*) as count from {{%info}} ")->queryOne();
-        $data = Yii::$app->db->createCommand("select id,title,pic,videoAddress,keywords,summary,content,cate,publishTime,hits,validTime from {{%info}} order by id desc limit $offset,$pagesize")->queryAll();
+        $data = Yii::$app->db->createCommand("select id,title,pic,cate,createTime,hits,content from {{%info}} order by id desc limit $offset,$pagesize")->queryAll();
         $url='/admin/info/index?p';
         $count = $count['count'];
         $page = new Pager("$url", $count, $page, $pagesize);
@@ -47,9 +47,9 @@ class InfoController extends ApiControl
             }
         } else {
             $getdata = new GetData();
-            $must = array('title' => '标题', 'summary' => '摘要', 'cate' => '分类');
+            $must = array('title' => '标题', 'pic' => '图片', 'cate' => '分类');
             $data = $getdata->PostData($must, 'info');
-            $arr = $getdata->Auto('publishTime');
+            $arr = $getdata->Auto('createTime');
             $data = array_merge($data, $arr);
             if (empty($data['id'])) {
                 $re = Yii::$app->db->createCommand()->insert("{{%info}}", $data)->execute();
