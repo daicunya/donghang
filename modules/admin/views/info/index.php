@@ -16,14 +16,77 @@
     .tiao-btn {
         font-size: 14px;
     }
-
+    .add-product {
+      line-height: 40px;
+    }
+    .pagination{
+      /*position: relative;*/
+    }
+    .pagination:after {
+      /*position: absolute;*/
+      display: block;
+      content: '';
+      visibility: hidden;
+      clear: both;
+    }
+  .pagination>li {
+    display: inline;
+  }
+  .pagination>li>a,
+  .pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    /*line-height: 1.42857143;*/
+    color: #337ab7;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    font: 400 14px/1.42857143 simsun;
+  }
+  .pagination>li>a>span {
+    font: 400 14px/1.42857143 simsun;
+  }
+  .pagination>li:first-child>a,
+  .pagination>li:first-child>span {
+    margin-left: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  .pagination>li:last-child>a,
+  .pagination>li:last-child>span {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+    .pagination > li > a:hover,
+    .pagination > li > span:hover,
+    .pagination > li > a:focus,
+    .pagination > li > span:focus {
+      z-index: 2;
+      color: #23527c;
+      background-color: #eee;
+      border-color: #ddd;
+    }
+    .pagination > .active > a,
+    .pagination > .active > span,
+    .pagination > .active > a:hover,
+    .pagination > .active > span:hover,
+    .pagination > .active > a:focus,
+    .pagination > .active > span:focus {
+      z-index: 3;
+      color: #fff;
+      cursor: default;
+      background-color: #337ab7;
+      border-color: #337ab7;
+    }
 </style>
 <div class="span10">
     <div >
         <a href="/index/index">首页</a><span >&gt;</span><span>产品管理</span>
     </div>
 
-    <a href="<?php echo baseUrl.'/admin/info/add'?>">添加资讯</a>
+    <a class="add-product" href="<?php echo baseUrl.'/admin/info/add'?>">添加产品</a>
     <table border="1"  style="table-layout: fixed;width:100%;">
         <tr align="center">
             <th width="60px">id</th>
@@ -92,7 +155,7 @@
         $('.tiao-btn').click(function () {
             location.href = location.pathname+"?p="+$('.tiao-val').val();
         })
-    })
+    });
     function del(id){
         if(confirm("确定删除内容吗")) {
             $.get("/admin/info/del", {id: id},

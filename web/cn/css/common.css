@@ -34,7 +34,7 @@ body {
 .navbar .navbar-collapse .navbar-nav>li>a:hover,
 .navbar .navbar-collapse .navbar-nav>li>a:link,
 .navbar .navbar-collapse .navbar-nav>li>a:focus {
-  color: #e9b257;
+  /*color: #e9b257;*/
 }
 .navbar .navbar-collapse .navbar-nav > .open > a,
 .navbar .navbar-collapse .navbar-nav > .open > a:focus,
