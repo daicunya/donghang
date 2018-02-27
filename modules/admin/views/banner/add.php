@@ -1,7 +1,7 @@
 
-<script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.config.js"></script>
-<script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.all.min.js"> </script>
-<script type="text/javascript" charset="utf-8" src="/ueditor/lang/zh-cn/zh-cn.js"></script>
+<!--<script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.config.js"></script>-->
+<!--<script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.all.min.js"> </script>-->
+<!--<script type="text/javascript" charset="utf-8" src="/ueditor/lang/zh-cn/zh-cn.js"></script>-->
 
 <div class="span10">
     <a href="/index/index">首页</a><span >&gt;</span><span>banner管理</span><span >&gt;</span><span>添加/修改</span>

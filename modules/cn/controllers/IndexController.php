@@ -23,7 +23,7 @@ class IndexController extends Controller
         $data['jiaoyin'] = Yii::$app->db->createCommand("select * from {{%info}} where cate='黑白印刷'")->queryAll();
         $data['sheji'] = Yii::$app->db->createCommand("select * from {{%info}} where cate='黑白印刷'")->queryAll();
 
-        return $this->render('index');
+        return $this->render('index',$data);
     }
     public function actionDetails()
     {

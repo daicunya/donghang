@@ -17,12 +17,14 @@ class BannerController extends ApiControl
     public $enableCsrfValidation = false;
     public function actionIndex()
     {
+        session_start();
         $data = Yii::$app->db->createCommand("select * from {{%banner}}")->queryAll();
         return $this->render('index', ['data' => $data]);
     }
 
     public function actionAdd()
     {
+        session_start();
         if (!$_POST) {
             $id=Yii::$app->request->get('id', '');
             if(empty($id)){
