@@ -17,6 +17,12 @@ class IndexController extends Controller
     public $layout='cn.php';
     public function actionIndex()
     {
+        $data['heibai'] = Yii::$app->db->createCommand("select * from {{%info}} where cate='黑白印刷'")->queryAll();
+        $data['zhizhi'] = Yii::$app->db->createCommand("select * from {{%info}} where cate='纸质印刷'")->queryAll();
+        $data['shuliao'] = Yii::$app->db->createCommand("select * from {{%info}} where cate='塑料'")->queryAll();
+        $data['jiaoyin'] = Yii::$app->db->createCommand("select * from {{%info}} where cate='黑白印刷'")->queryAll();
+        $data['sheji'] = Yii::$app->db->createCommand("select * from {{%info}} where cate='黑白印刷'")->queryAll();
+
         return $this->render('index');
     }
     public function actionDetails()

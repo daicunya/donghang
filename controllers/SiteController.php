@@ -17,12 +17,11 @@ class SiteController extends Controller
         #return $this->render('index');
     }
 
-//    public function actionError()
-//    {
-//
-//        $this->redirect('/surprise.html');
-//        #return $this->render('index');
-//    }
+    public function actionError()
+    {
+        $this->redirect('/surprise.html');
+        #return $this->render('index');
+    }
 
 
 }

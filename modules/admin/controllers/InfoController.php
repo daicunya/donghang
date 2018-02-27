@@ -19,6 +19,7 @@ class InfoController extends ApiControl
 
     public function actionIndex()
     {
+        session_start();
         $pagesize = 15;
         $page = Yii::$app->request->get('p', 1);
         $offset = $pagesize * ($page - 1);
@@ -36,7 +37,7 @@ class InfoController extends ApiControl
     // 修改和添加资讯，判断依据是$_POST['id']是否提交
     public function actionAdd()
     {
-
+        session_start();
         if (!$_POST) {
             $id = Yii::$app->request->get('id', '');
             if (empty($id)) {

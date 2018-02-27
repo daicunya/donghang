@@ -1,4 +1,4 @@
-<?php session_start();?>
+<?php //session_start();?>
 <div class="navbar navbar-inverse">
     <div class="navbar-inner">
         <div class="container-fluid">
