@@ -37,7 +37,7 @@ class BannerController extends ApiControl
         } else {
             $banner=new Banner();
             $getdata=new GetData();
-            $must=array('module'=>'模块','url'=>'地址','alt'=>'说明');
+            $must=array('url'=>'地址');
             $data=$getdata->PostData($must,'banner');
             $data['time']=date("Y-m-d",time());
             if(empty($data['id'])){

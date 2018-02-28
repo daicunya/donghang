@@ -8,7 +8,6 @@
 
         <tr align="center">
             <th>id</th>
-            <th>模块</th>
             <th>图片</th>
             <th>外链地址</th>
             <th>说明</th>
@@ -19,7 +18,6 @@
         foreach($data as $v){?>
             <tr>
                 <td><?php echo $v['id']?></td>
-                <td><?php echo $v['module']?></td>
                 <td><?php echo $v['pic']?></td>
                 <td><?php echo $v['url']?></td>
                 <td><?php echo $v['alt']?></td>
