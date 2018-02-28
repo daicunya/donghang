@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="/cn/css/font-awesome.min.css">
   <link rel="stylesheet" href="/cn/css/common.css">
   <link rel="stylesheet" href="/cn/css/index.css">
-  <title>首页</title>
+  <title>东航印刷网</title>
 </head>
 <body>
 <?php use app\commands\front\NavWidget;?>
