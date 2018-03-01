@@ -12,6 +12,12 @@
                 <td><input type="text" name="title" placeholder="标题" style="width: 500px;" value="<?php echo isset($data)? $data['title']:''?>"></td>
             </tr>
             <tr>
+                <td>简介:</td>
+                <td>
+                    <input type="text" name="introduction" placeholder=""  style="width: 500px;" value="<?php echo isset($data)? $data['introduction']:''?>" />
+                </td>
+            </tr>
+            <tr>
                 <td>类别:</td>
                 <td>
                     <select name="cate" id="cate" >
@@ -21,6 +27,7 @@
                         <option value ="塑料材质印刷" <?php echo isset($data)&& $data['cate']== "塑料材质印刷" ?  'selected=selected':''?>>塑料材质印刷</option>
                         <option value ="胶印" <?php echo isset($data)&& $data['cate']== "胶印" ?  'selected=selected':''?>>胶印</option>
                         <option value ="设计制作" <?php echo isset($data)&& $data['cate']== "设计制作" ?  'selected=selected':''?>>设计制作</option>
+                        <option value ="图文输出" <?php echo isset($data)&& $data['cate']== "图文输出" ?  'selected=selected':''?>>图文输出</option>
                    </select>
                 </td>
             </tr>

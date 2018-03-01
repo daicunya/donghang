@@ -7,7 +7,6 @@
     <a href="/index/index">首页</a><span >&gt;</span><span>banner管理</span><span >&gt;</span><span>添加/修改</span>
     <form name="form" method="post" action="<?php echo baseUrl."/admin/banner/add"?>" enctype="multipart/form-data">
         <table>
-
             <tr>
                 <td width="80px">位置:</td>
                 <td>

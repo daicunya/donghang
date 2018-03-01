@@ -4,10 +4,12 @@
  */
     namespace app\commands\front;
     use yii\base\Widget;
-    use yii;;
-	class FootWidget extends Widget  {
-        public $category;
-        public $banner;
+    use yii;
+    use yii\web\application;
+    use yii\web\controller;
+	class FooterWidget extends Widget  {
+        public $data;
+
         /**
          * 定义函数
          * */
@@ -18,9 +20,14 @@
         /**
          * 运行覆盖程序
          * */
-        public function run(){
-            return $this->render('foot');
+        /**
+         * 运行覆盖程序
+         * */
+        public function run()
+        {
+            return $this->render('footer');
         }
+
 	}
 ?>
 

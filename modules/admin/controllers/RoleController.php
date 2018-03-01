@@ -19,17 +19,20 @@ class RoleController extends ApiControl
 
     public function actionIndex()
     {
+        session_start();
         return $this->render('index');
     }
 
     public function actionRole_node()
     {
+        session_start();
         $data = Yii::$app->db->createCommand("select * from {{%role}}")->queryAll();
         return $this->render('role_node', ['data' => $data]);
     }
 
     public function actionAdd()
     {
+        session_start();
         $id = Yii::$app->request->get('id', '');
         $role = new Role();
         if (!$_POST) {
@@ -86,12 +89,17 @@ class RoleController extends ApiControl
             echo true;
         }
     }
-    public function actionAdmin_index(){
-        $data = Yii::$app->db->createCommand("select * from {{%admin}}")->queryAll();
-        return $this->render('admin_index',['data'=>$data]);
-    }
-    public function actionAdmin_add(){
 
+    public function actionAdmin_index()
+    {
+        session_start();
+        $data = Yii::$app->db->createCommand("select * from {{%admin}}")->queryAll();
+        return $this->render('admin_index', ['data' => $data]);
+    }
+
+    public function actionAdmin_add()
+    {
+        session_start();
         $id = Yii::$app->request->get('id', '');
         $admin = new Admin();
         if (!$_POST) {
@@ -105,15 +113,15 @@ class RoleController extends ApiControl
 
         } else {
             $userPass = Yii::$app->request->post('userPass', '');
-            if(strlen($userPass)==32){
-                $Data['userPass']= $userPass;
-            }else{
+            if (strlen($userPass) == 32) {
+                $Data['userPass'] = $userPass;
+            } else {
                 $Data['userPass'] = md5($userPass);
             }
             $Data['userName'] = Yii::$app->request->post('userName', '');
             $Data['roleId'] = Yii::$app->request->post('roleId', '');
             $Data['id'] = Yii::$app->request->post('id', '');
-            if (empty($Data['userName'] || $Data['userPass']||$Data['roleId'])) {
+            if (empty($Data['userName'] || $Data['userPass'] || $Data['roleId'])) {
                 die('<script>alert("请将数据填写完整");history.go(-1);</script>');
             }
             // 存在$roleData['id']即为修改提交，否则为添加
@@ -130,6 +138,7 @@ class RoleController extends ApiControl
             }
         }
     }
+
     public function actionAdmin_del()
     {
         $id = Yii::$app->request->get('id', '');

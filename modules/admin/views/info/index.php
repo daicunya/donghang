@@ -91,6 +91,7 @@
         <tr align="center">
             <th width="60px">id</th>
             <th>标题</th>
+            <th>简介</th>
             <th>图片</th>
             <th width="80px">产品类别</th>
             <th width="120px">内容</th>
@@ -108,6 +109,11 @@
                 <td>
                     <div>
                         <?php echo $v['title']?>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <?php echo $v['introduction']?>
                     </div>
                 </td>
                 <td title="<?php echo $v['pic']?>">

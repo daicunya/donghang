@@ -18,6 +18,7 @@ class NodeController extends ApiControl
 
     public function actionIndex()
     {
+        session_start();
         $data = Yii::$app->db->createCommand("select * from {{%node}}")->queryAll();
         $node = new Node();
         $data = $node->getList($data);
@@ -26,6 +27,7 @@ class NodeController extends ApiControl
 
     public function actionAdd()
     {
+        session_start();
         if (!$_POST) {
             $id = Yii::$app->request->get('id', '');
             $data = Yii::$app->db->createCommand("select name,id from {{%node}} where pid=0")->queryAll();

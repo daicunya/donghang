@@ -45,8 +45,101 @@ class Pager
             $this->pageIndex = $this->totalPagesCount;
         }
     }
-//$this->pageUrl}={$i}
-//{$this->CurrentUrl}={$this->TotalPages}
+
+    public function GetPagerContent()
+    {
+        $str = "";
+
+        //首页 上一页
+        if ($this->pageIndex > 0 && $this->totalPagesCount > 0) {
+            if ($this->pageIndex == 1) {
+                $str .= '<li class="' . $this->pageClass . ' on">1</li>';
+            } else {
+                $str .= '<li class="' . $this->pageClass . '">1</li>';
+            }
+        }
+        /*
+        除首末后 页面分页逻辑
+        */
+        //10页（含）以下
+        $currnt = "";
+        if ($this->totalPagesCount <= 10) {
+            for ($i = 2; $i < $this->totalPagesCount; $i++) {
+                if ($i == $this->pageIndex) {
+                    $currnt = "class='on'";
+                } else {
+                    $currnt = "class='$this->pageClass'";
+                }
+                $str .= "<li {$currnt}>$i</li>";
+            }
+        } else                                //10页以上
+        {
+            if ($this->pageIndex < 5)  //当前页小于3
+            {
+                for ($i = 2; $i <= 10; $i++) {
+                    if ($i == $this->pageIndex) {
+                        $currnt = " class='on'";
+                    } else {
+                        $currnt = "class='$this->pageClass'";
+                    }
+                    $str .= "<li {$currnt}>$i</li>";
+                }
+                $str .= '<li>...</li>';
+            }
+            if ($this->pageIndex >= 5 && $this->totalPagesCount < 15)   //   5 >= 当前页 >= 3
+            {
+                $str .= '<li>...</li>';
+                for ($i = 5; $i < $this->totalPagesCount; $i++) {
+                    if ($i == $this->pageIndex) {
+                        $currnt = " class='on'";
+                    } else {
+                        $currnt = "class='$this->pageClass'";
+                    }
+                    $str .= "<li {$currnt}>$i</li>";
+
+                }
+            }
+            if (5 <= $this->pageIndex && ($this->totalPagesCount - $this->pageIndex) > 9 && $this->totalPagesCount >= 15)             //当前页大于5，同时小于总页数-5
+
+            {
+                $str .= '<li>...</li>';
+                for ($i = $this->pageIndex; $i <= ($this->pageIndex + 9); $i++) {
+                    if ($i == $this->pageIndex) {
+                        $currnt = " class='on'";
+                    } else {
+                        $currnt = "class='$this->pageClass'";
+                    }
+                    $str .= "<li {$currnt}>$i</li>";
+                }
+                $str .= '<li>...</li>';
+            }
+            if (5 <= $this->pageIndex && ($this->totalPagesCount - $this->pageIndex) <= 9 && $this->totalPagesCount >= 15) {
+                $str .= '<li>...</li>';
+                for ($i = ($this->totalPagesCount - 9); $i < $this->totalPagesCount; $i++)//功能1
+                {
+                    if ($i == $this->pageIndex) {
+                        $currnt = " class='on'";
+                    } else {
+                        $currnt = "class='$this->pageClass'";
+                    }
+                    $str .= "<li {$currnt}>$i</li>";
+
+                }
+            }
+        }
+        /*
+        除首末后 页面分页逻辑结束
+        */
+        //下一页 末页
+        if ($this->totalPagesCount >= 2) {
+            if ($this->pageIndex == $this->totalPagesCount) {
+                $str .= '<li class="on">' . $this->totalPagesCount . '</li>';
+            } else {
+                $str .= '<li class="' . $this->pageClass . '">' . $this->totalPagesCount . '</li>';
+            }
+        }
+        return $str;
+    }
     public function GetPager()
     {
         $str='<div class="s-page" aria-label="Page navigation">';
