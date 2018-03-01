@@ -1,0 +1,55 @@
+.about-wrap {
+  overflow: hidden;
+}
+.about-wrap .tab-list {
+  font-size: 0;
+  background-color: #f5f5f5;
+}
+.about-wrap .tab-item {
+  display: inline-block;
+  width: 25%;
+  padding: 8px 0;
+  text-align: center;
+  font-size: 14px;
+}
+.about-wrap .tab-item.on {
+  border-bottom: 1px solid #e9b257;
+  color: #e9b257;
+}
+.about-wrap .bd>ul {
+  padding: 0 10px;
+}
+.about-wrap .about-us>li {
+  line-height: 1.6;
+  font-size: 14px;
+}
+.about-wrap .contact-item>p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 14px;
+}
+.about-wrap .contact-item #allMap {
+  height: 300px;
+}
+.about-wrap .copy-item>div {
+
+}
+.about-wrap .copy-item>div>h4 {
+  font-size: 16px;
+}
+.about-wrap .copy-item>div>p {
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/*
+  媒体查询
+*/
+@media screen and (max-width: 768px) {
+  .footer .phone-wrap {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+  }
+}

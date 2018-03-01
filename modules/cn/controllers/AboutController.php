@@ -18,4 +18,8 @@ class AboutController extends Controller
     {
         return $this->render('about');
     }
+    public function actionAboutPhone()
+    {
+      return $this->render('about-phone');
+    }
 }

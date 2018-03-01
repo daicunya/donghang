@@ -30,7 +30,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html">首页<span class="sr-only">(current)</span></a></li>
+        <li class="active"><a href="/index.html">首页<span class="sr-only">(current)</span></a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
              aria-expanded="false">黑白印刷<span class="caret"></span></a>
@@ -105,7 +105,8 @@
             </ul>
           </div>
         </li>
-        <li><a href="/aboutUs.html.html">关于我们</a></li>
+        <li class="about-pc"><a href="/aboutUs.html">关于我们</a></li>
+        <li class="about-phone"><a href="/about-phone.html">关于我们</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -541,7 +542,7 @@
         <li><a href="about.html#copyRight">版权声明</a></li>
         <li><a href="about.html#orderFlow">订购流程</a></li>
       </ul>
-      <p> Copyright © 2018  donghang.com    版权所有   鲁ICP备14013361号-7</p>
+      <p> Copyright © 2018  hddonghang.com    版权所有   冀ICP备18006428号</p>
     </div>
   </div>
   <!--移动端-->

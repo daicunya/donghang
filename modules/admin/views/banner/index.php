@@ -1,9 +1,14 @@
+<style>
+  .add-banner {
+    line-height: 40px;
+  }
+</style>
 <div class="span10">
     <div >
         <a href="/index/index">首页</a><span >&gt;</span><span>banner管理</span>
     </div>
 
-    <a href="<?php echo baseUrl.'/admin/banner/add'?>">添加banner</a>
+    <a class="add-banner" href="<?php echo baseUrl.'/admin/banner/add'?>">添加banner</a>
     <table border="1"  width="100%">
 
         <tr align="center">

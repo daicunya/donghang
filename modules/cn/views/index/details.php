@@ -105,7 +105,8 @@
             </ul>
           </div>
         </li>
-        <li><a href="/aboutUs.html">关于我们</a></li>
+        <li class="about-pc"><a href="/aboutUs.html">关于我们</a></li>
+        <li class="about-phone"><a href="/about-phone.html">关于我们</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
