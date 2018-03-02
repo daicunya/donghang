@@ -7,27 +7,6 @@
     <a href="/index/index">首页</a><span >&gt;</span><span>banner管理</span><span >&gt;</span><span>添加/修改</span>
     <form name="form" method="post" action="<?php echo baseUrl."/admin/banner/add"?>" enctype="multipart/form-data">
         <table>
-            <tr>
-                <td width="80px">位置:</td>
-                <td>
-                    <select name="module">
-                        <option value ="">请添加banner图位置</option>
-                        <option value ="sat" <?php echo isset($data)&& $data['module']=="sat" ?  'selected':''?>>首页</option>
-<!--                        <option value ="pubclass" --><?php //echo isset($data)&& $data['module']=="pubclass" ?  'selected':''?><!-->公开课</option>-->
-<!--                        <option value ="info" --><?php //echo isset($data)&& $data['module']=="info" ?  'selected':''?><!-->资讯</option>-->
-<!--                        <option value ="wapIndex" --><?php //echo isset($data)&& $data['module']=="wapIndex" ?  'selected':''?><!-->移动端首页</option>-->
-                    </select>
-                </td>
-<!--                <td><input type="text" name="module" placeholder="模块"  value="--><?php //echo isset($data)? $data['controller']:''?><!--"></td>-->
-            </tr>
-<!--            <tr>-->
-<!--                <td>图片</td>-->
-<!--                <td>-->
-<!--                    --><?php // if(isset($data)) {$pic=$data['pic'];echo"<input name='pic' type='text' value='$pic' style='width: 500px;;'>";}
-//                    else {echo '<input id="file" type="file" name="pic" >';
-//                    }?>
-<!--                </td>-->
-<!--            </tr>-->
             <?php if(isset($data)) {
                 $str = '<tr>';
                 $str .= '<td>原图片:</td>';

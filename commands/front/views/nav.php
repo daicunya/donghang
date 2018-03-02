@@ -77,3 +77,27 @@
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
+<div class="side-bar">
+  <ul>
+    <li class="side-wechat">
+      <p></p>
+      <div>
+        <img src="/cn/images/ewm.jpg" alt="微信二维码">
+        <span>请扫描二维码</span>
+      </div>
+    </li>
+    <li class="side-qq">
+      <a href="http://wpa.qq.com/msgrd?v=3&uin=376452812&site=qq&menu=yes" target="_blank">
+        <p></p>
+        <div><i class="fa fa-qq"></i></div>
+      </a>
+    </li>
+    <li class="side-tel">
+      <p></p>
+      <div><i class="fa fa-phone"></i>电话：13513203567</div>
+    </li>
+    <li class="side-arrow">
+      <p></p>
+    </li>
+  </ul>
+</div>

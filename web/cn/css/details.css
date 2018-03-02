@@ -18,36 +18,58 @@
   font-size: 1.6rem;
   color: #777;
 }
-.detail-wrap .detail-aside .aside-item {
+.detail-aside .aside-item {
   padding: 10px;
   border-bottom: 1px dashed #777;
   color: #777;
   background-color: #f5f5f5;
 }
-.detail-wrap .detail-aside .aside-item:last-of-type {
+.detail-aside .aside-item:last-of-type {
   border-bottom-color: transparent;
 }
-.detail-wrap .detail-aside .aside-item>div {
+.detail-aside .aside-item>.aside-img {
   width: 100%;
   overflow: hidden;
 }
-.detail-wrap .detail-aside .aside-item>div a {
+.detail-aside .aside-img {
+  position: relative;
+}
+.detail-aside .aside-img a {
   display: block;
   width: 100%;
 }
-.detail-wrap .detail-aside .aside-item>div a img {
+.detail-aside .aside-img a img {
   width: 100%;
 }
-.detail-wrap .detail-aside .aside-item>a {
+.detail-aside .aside-item>.prod-name {
   display: block;
   margin: 5px 0;
   font-size: 1.4rem;
   color: #555;
 }
-.detail-wrap .detail-aside .aside-item>p {
+.detail-aside .aside-item>.prod-introduction {
+  overflow: hidden;
   margin-bottom: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   color: #999;
 }
+.detail-aside .aside-item:hover .aside-img:after {
+  position: absolute;
+  display: block;
+  content: '';
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,.3);
+}
+.detail-aside .aside-item:hover .prod-name {
+  color: #e9b257;
+}
+
+/*
+  移动端相关产品推荐
+*/
 .recommend-pro {
   display: none;
 }

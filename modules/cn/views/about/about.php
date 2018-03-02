@@ -28,15 +28,15 @@
     <div class="about-us" id="aboutUS">
       <h2>关于我们</h2>
       <p>
-        多多印网（www.duoduoyin.com）由青岛创易智联网络有限公司创立，是国内领先的商务印品一站式采购平台，提供印刷物料定制、物流送货服务，包括展会物料、日常办公、地推营销、门店宣传4大类50多种印品品类，200多种选择。用户足不出户，只需轻触鼠标，即可在线完成订购，坐等送货上门。多多印整合上游印刷厂商，精选优质供应商，挖掘厂商单品优势，集中零散订单，降低企业印刷成本，提升印刷质量与效率，成功解决了线下印刷成本高、流程复杂、质量参差不齐、起印量受限等问题。
+        邯郸开发区东航印刷有限公司，是一家新兴的包装印刷公司，公司实力雄厚，拥有国内先进的1.3米幅宽六色机组柔板印刷机，可承印大量纸质印刷品（如纸袋、纸杯、纸碗、奶包、快递袋、纸箱等印刷）本公司主营前期印刷服务,拥有多年的印刷行业从业经验,是一支专业的技术及服务团队。欢迎各包装厂及用户来我厂考察，参观。合作共赢！
       </p>
     </div>
     <!--联系我们-->
     <div class="contact-us" id="contactUS">
       <h2>联系我们</h2>
-      <p><span>服务热线:</span>400-123-123</p>
-      <p><span>微信号:</span>hueaf</p>
-      <p><span>公司地址:</span>邯郸市东大街三段205号</p>
+      <p><span>服务热线:</span>13513203567</p>
+      <p><span>微信号:</span>13513203567</p>
+      <p><span>公司地址:</span>河北省邯郸市世纪大街23号</p>
       <div id="allMap"></div>
     </div>
     <!--版权声明-->
@@ -59,6 +59,9 @@
     <!--订购流程-->
     <div  id="orderFlow">
       <h2>订购流程</h2>
+      <p>QQ咨询：<a href="http://wpa.qq.com/msgrd?v=3&uin=376452812&site=qq&menu=yes">376452812</a>
+      <p>微信咨询：13513203567</p>
+      <p>电话订购：<a href="tel:13513203567">13513203567</a></p>
     </div>
   </div>
 </div>
@@ -68,14 +71,15 @@
 <script src="https://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=naQc9Vh2auBWcss2wlmn9filGlE31num"></script>
+<script src="/cn/js/common.js"></script>
 </body>
 <script>
   var map = new BMap.Map("allMap");
-  var point = new BMap.Point(116.404, 39.915);
+  var point = new BMap.Point(114.54871,36.632478);
   var top_left_control = new BMap.ScaleControl({anchor: BMAP_ANCHOR_TOP_LEFT});// 左上角，添加比例尺
   var top_left_navigation = new BMap.NavigationControl();  //左上角，添加默认缩放平移控件
   var top_right_navigation = new BMap.NavigationControl({anchor: BMAP_ANCHOR_TOP_RIGHT, type: BMAP_NAVIGATION_CONTROL_SMALL});
-  map.centerAndZoom(point, 15);
+  map.centerAndZoom(point, 18);
   var marker = new BMap.Marker(point);  // 创建标注
   map.addOverlay(marker);               // 将标注添加到地图中
   map.addControl(top_left_control);

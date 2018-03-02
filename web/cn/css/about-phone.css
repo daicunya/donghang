@@ -25,11 +25,17 @@
 }
 .about-wrap .contact-item>p {
   margin: 0;
-  line-height: 1.6;
+  line-height: 1.8;
   font-size: 14px;
 }
-.about-wrap .contact-item #allMap {
-  height: 300px;
+#phoneMap {
+  width: 100%;
+  margin-top: 10px;
+  overflow: hidden;
+}
+#phoneMap img{
+   width: 100%;
+  /*height: 300px;*/
 }
 .about-wrap .copy-item>div {
 

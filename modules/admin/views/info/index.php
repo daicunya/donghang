@@ -85,7 +85,6 @@
     <div >
         <a href="/index/index">首页</a><span >&gt;</span><span>产品管理</span>
     </div>
-
     <a class="add-product" href="<?php echo baseUrl.'/admin/info/add'?>">添加产品</a>
     <table border="1"  style="table-layout: fixed;width:100%;">
         <tr align="center">

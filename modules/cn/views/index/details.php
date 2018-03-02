@@ -33,13 +33,13 @@
       <ul>
         <?php foreach($related as $v){?>
           <li class="aside-item">
-            <div>
+            <div class="aside-img">
               <a href="/details/<?php echo $v['id']?>.html">
                 <img src="<?php echo $v['pic']?>" alt="">
               </a>
             </div>
-            <a href="/details/<?php echo $v['id']?>.html"><?php echo $v['title']?></a>
-            <p><?php echo $v['introduction']?></p>
+            <a class="prod-name" href="/details/<?php echo $v['id']?>.html"><?php echo $v['title']?></a>
+            <p class="prod-introduction" title="<?php echo $v['introduction']?>"><?php echo $v['introduction']?></p>
           </li>
         <?php }?>
       </ul>
@@ -56,8 +56,8 @@
         <p>欢迎随时与我们联系</p>
       </div>
       <div class="col-sm-4 col-xs-4">
-        <a href=""><i class="fa fa-qq"></i></a>
-        <a href=""><i class="fa fa-phone"></i></a>
+        <a href="http://wpa.qq.com/msgrd?v=3&uin=376452812&site=qq&menu=yes"><i class="fa fa-qq"></i></a>
+        <a href="tel:13513203567"><i class="fa fa-phone"></i></a>
       </div>
     </div>
     <h3>推荐产品</h3>
@@ -102,6 +102,7 @@
 <script src="https://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
+<script src="/cn/js/common.js"></script>
 </body>
 <script>
   $(function () {

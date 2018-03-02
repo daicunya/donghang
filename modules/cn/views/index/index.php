@@ -32,21 +32,38 @@
     <div class="bnr-arrow swiper-button-next"></div>
     <div class="bnr-arrow swiper-button-prev"></div>
   </div>
-  <div class="p-wrap hot-wrap">
-    <h2 class="p-title">热门产品</h2>
+<!--  热门-->
+<!--  <div class="p-wrap hot-wrap">-->
+<!--    <h2 class="p-title">热门产品</h2>-->
+<!--    <ul class="row">-->
+<!--      --><?php //foreach($hot as $v){?>
+<!--      <li class="col-md-2 col-sm-4 col-xs-4">-->
+<!--        <a href="/details/--><?php //echo $v['id']?><!--.html">-->
+<!--          <div>-->
+<!--            <img src="--><?php //echo $v['pic']?><!--" alt="">-->
+<!--          </div>-->
+<!--        </a>-->
+<!--      </li>-->
+<!--      --><?php //}?>
+<!--    </ul>-->
+<!--  </div>-->
+<!-- 纸质-->
+  <div class="p-wrap paper-wrap" id="footZZ">
+    <h2 class="p-title">纸质印刷</h2>
     <ul class="row">
-      <?php foreach($hot as $v){?>
-      <li class="col-md-2 col-sm-4 col-xs-4">
-        <a href="/details/<?php echo $v['id']?>.html">
-          <div>
-            <img src="<?php echo $v['pic']?>" alt="">
-          </div>
-        </a>
-      </li>
+      <?php foreach($arr['zhizhi'] as $k=>$v){?>
+        <li class="col-md-4 col-sm-4 col-xs-4">
+          <a href="/details/<?php echo $v['id']?>.html">
+            <div>
+              <img src="<?php echo $v['pic']?>" alt="">
+            </div>
+          </a>
+        </li>
       <?php }?>
     </ul>
   </div>
-  <div class="p-wrap black-wrap">
+<!--  黑白-->
+  <div class="p-wrap black-wrap" id="footHB">
     <h2 class="p-title">黑白印刷</h2>
     <ul class="row">
       <?php foreach($arr['heibai'] as $k=>$v){?>
@@ -60,21 +77,8 @@
       <?php }?>
     </ul>
   </div>
-  <div class="p-wrap paper-wrap">
-    <h2 class="p-title">纸质印刷</h2>
-    <ul class="row">
-      <?php foreach($arr['zhizhi'] as $k=>$v){?>
-        <li class="col-md-4 col-sm-4 col-xs-4>">
-          <a href="/details/<?php echo $v['id']?>.html">
-            <div>
-              <img src="<?php echo $v['pic']?>" alt="">
-            </div>
-          </a>
-        </li>
-      <?php }?>
-    </ul>
-  </div>
-  <div class="p-wrap plastic-wrap">
+<!--  塑料-->
+  <div class="p-wrap plastic-wrap" id="footSL">
     <h2 class="p-title">塑料材质印刷</h2>
     <ul class="row">
       <?php foreach($arr['shuliao'] as $k=>$v){?>
@@ -88,11 +92,12 @@
       <?php }?>
     </ul>
   </div>
-  <div class="p-wrap offset-wrap">
+<!--  胶印-->
+  <div class="p-wrap offset-wrap" id="footJY">
     <h2 class="p-title">胶印</h2>
     <ul class="row">
       <?php foreach($arr['jiaoyin'] as $k=>$v){?>
-        <li class="col-md-4 col-sm-4 col-xs-4>">
+        <li class="col-md-4 col-sm-4 col-xs-4">
           <a href="/details/<?php echo $v['id']?>.html">
             <div>
               <img src="<?php echo $v['pic']?>" alt="">
@@ -102,7 +107,8 @@
       <?php }?>
     </ul>
   </div>
-  <div class="p-wrap custom-wrap">
+<!--  设计-->
+  <div class="p-wrap custom-wrap" id="footSJ">
     <h2 class="p-title">设计定制</h2>
     <ul class="row">
       <?php foreach($arr['sheji'] as $k=>$v){?>
@@ -116,11 +122,12 @@
       <?php }?>
     </ul>
   </div>
-  <div class="p-wrap text-wrap">
+<!--  图文-->
+  <div class="p-wrap text-wrap" id="footTW">
     <h2 class="p-title">图文输出</h2>
     <ul class="row">
       <?php foreach($arr['tuwen'] as $k=>$v){?>
-        <li class="col-md-3 col-sm-3 col-xs-3>">
+        <li class="col-md-3 col-sm-3 col-xs-3">
           <a href="/details/<?php echo $v['id']?>.html">
             <div>
               <img src="<?php echo $v['pic']?>" alt="">
@@ -137,6 +144,7 @@
 <script src="https://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
+<script src="/cn/js/common.js"></script>
 </body>
 <script>
   $(function () {
