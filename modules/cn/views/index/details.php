@@ -63,33 +63,17 @@
     <h3>推荐产品</h3>
     <div class="swiper-container">
       <div class="swiper-wrapper">
+        <?php foreach($related as $v){?>
         <div class="swiper-slide">
           <div>
-            <a href="">
-              <img src="/cn/images/aside01.jpg" alt="">
+            <a href="/details/<?php echo $v['id']?>.html">
+              <img src="<?php echo $v['pic']?>" alt="">
             </a>
           </div>
-          <a href="">餐巾纸</a>
-          <p>100%原生木浆，柔软细腻，食品级安全</p>
+          <a class="prod-name" href="/details/<?php echo $v['id']?>.html"><?php echo $v['title']?></a>
+          <p class="prod-introduction" title="<?php echo $v['introduction']?>"><?php echo $v['introduction']?></p>
         </div>
-        <div class="swiper-slide">
-          <div>
-            <a href="">
-              <img src="/cn/images/aside01.jpg" alt="">
-            </a>
-          </div>
-          <a href="">餐巾纸</a>
-          <p>100%原生木浆，柔软细腻，食品级安全</p>
-        </div>
-        <div class="swiper-slide">
-          <div>
-            <a href="">
-              <img src="/cn/images/aside01.jpg" alt="">
-            </a>
-          </div>
-          <a href="">餐巾纸</a>
-          <p>100%原生木浆，柔软细腻，食品级安全</p>
-        </div>
+        <?php }?>
       </div>
       <!-- 如果需要分页器 -->
       <div class="swiper-pagination"></div>
