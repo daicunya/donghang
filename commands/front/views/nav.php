@@ -83,7 +83,7 @@
       <p></p>
       <div>
         <img src="/cn/images/ewm.jpg" alt="微信二维码">
-        <span>请扫描二维码</span>
+        <span>微信咨询</span>
       </div>
     </li>
     <li class="side-qq">

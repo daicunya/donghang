@@ -9,7 +9,11 @@
   <link rel="stylesheet" href="/cn/css/font-awesome.min.css">
   <link rel="stylesheet" href="/cn/css/common.css">
   <link rel="stylesheet" href="/cn/css/index.css">
-  <title>东航印刷网</title>
+  <title>东航印刷网--承接大量纸质印刷品（如纸袋、纸杯、纸碗、奶包、快递袋、纸箱等印刷）</title>
+  <meta name="keywords" content="东航包装印刷网，承接大量纸质印刷品（如纸袋、纸杯、纸碗、奶包、快递袋、纸箱等印刷）、塑料薄膜、快递袋、无纺布、商标广告、地图画册、宣传画册、书刊封面、日历、年历
+奖牌、工作牌、证书、精装册、喷绘、写真、条幅、工程复印、彩图输出、数码蓝图、设计名片、宣传页、画册等">
+  <meta name="description" content="东航包装印刷网，承接大量纸质印刷品（如纸袋、纸杯、纸碗、奶包、快递袋、纸箱等印刷）、塑料薄膜、快递袋、无纺布、商标广告、地图画册、宣传画册、书刊封面、日历、年历
+奖牌、工作牌、证书、精装册、喷绘、写真、条幅、工程复印、彩图输出、数码蓝图、设计名片、宣传页、画册等">
 </head>
 <body>
 <?php use app\commands\front\NavWidget;?>
