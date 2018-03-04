@@ -71,4 +71,7 @@
   .bnr-wrap {
     height: 200px;
   }
+  .p-title {
+    font-size: 2rem;
+  }
 }
