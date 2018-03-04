@@ -373,4 +373,7 @@ body {
   .footer .phone-wrap {
     display: block;
   }
+  .side-bar {
+    display: none;
+  }
 }

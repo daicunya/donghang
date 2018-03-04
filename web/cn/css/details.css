@@ -95,7 +95,7 @@
 }
 .recommend-pro .custom-service>div:last-of-type a {
   display: inline-block;
-  padding: 0 8px;
+  padding: 0 7px;
 }
 .recommend-pro .custom-service>div:last-of-type a:first-of-type {
   border-right: 1px solid #ccc;
@@ -117,18 +117,26 @@
 }
 .recommend-pro .swiper-slide>div {
   width: 100%;
+  height: 320px;
+  overflow: hidden;
 }
 .recommend-pro .swiper-slide>div a {
   display: block;
+  width: 100%;
+  height: 100%;
 }
 .recommend-pro .swiper-slide>div a img {
   width: 100%;
+  height: 100%;
 }
 .recommend-pro .swiper-slide>a {
   font-size: 1.4rem;
   color: #555;
 }
 .recommend-pro .swiper-slide>p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   font-size: 1.2rem;
   color: #999;
 }
@@ -138,6 +146,21 @@
   }
   .recommend-pro {
     display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .recommend-pro .swiper-slide>div {
+    height: 260px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .recommend-pro .swiper-slide>div {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .recommend-pro .swiper-slide>div {
+    height: 160px;
   }
 }
 

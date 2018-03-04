@@ -97,9 +97,9 @@
     var swiper = new Swiper('.swiper-container', {
       pagination: '.swiper-pagination',
       slidesPerView: 2,
-      // centeredSlides: true,
+//       centeredSlides: true,
       paginationClickable: true,
-      spaceBetween: 30,
+      spaceBetween: 10,
       freeMode: true
     });
   });
